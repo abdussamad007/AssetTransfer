@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="web3.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+            <h1>Workflow@Chain</h1>
+        <div id="login">        
+        <label for="name" class="col-lg-2 control-label">Enter Address</label>
+        <input id="wf_Address" name="wf_Address" type="text">
+        <label for="name" class="col-lg-2 control-label">Select Role</label>
+        <select name="wf_Role" id="wf_Role">
+            <option value="wf_Seller">Seller</option>
+            <option value="wf_Buyer">Buyer</option>
+            <option value="wf_Inspector">Inspector</option>
+            <option value="wf_Appraiser">Appraiser</option>
+          </select>
+        <button id="loginBtn" >Login</button>
+        </div> 
+        <div id="user">
+                <p id="accountAddress" class="text-center"></p>
+                <p id="deployInfo" class="text-center"></p>                
+        </div>
+        <div class="loader" id="loader"></div>
+        <div id="sellerTop">
+            <label for="name" class="col-lg-2 control-label">Product Description</label>
+            <input id="wf_ProdDesc" name="wf_ProdDesc" type="text">
+            <label for="name" class="col-lg-2 control-label">Product Price</label>
+            <input id="wf_ProdPrice" name="wf_ProdPrice" type="text">
+            <button id="sellBtn" >Deploy</button>            
+        </div>
+        <div id="sellerMid">
+            <label for="name" class="col-lg-1 control-label">Click to Terminate Process</label>
+            <button id="terminate" >Terminate</button>
+            <hr/>
+            <label for="name" class="col-lg-1 control-label">Restart Process</label>
+            <button id="reject" >Restart</button>
+            
+        </div>
+        <div id="sellerBottom">
+            <p id="sellerEventInfo" class="text-center"></p>
+            <button id="acceptOffer" >AcceptOffer</button>
+            <button id="rejectOffer" >Reject</button>            
+            <button id="sellerAccept"> Accept</button>
+        </div>
+        <div id="buyerTop">
+            <p id="buyerEventInfo" class="text-center"></p>
+            <label for="name" class="col-lg-2 control-label">Offer Price</label>
+            <input id="wf_OfferPrice" name="wf_OfferPrice" type="text">
+            <button id="mkOfferBtn" >MakeOffer</button>
+            <button id="modOfferBtn" >ModifyOffer</button>            
+        </div>
+        <div id="buyerBottom">
+            <p id="buyerRes" class="text-center"></p>
+            <button id="buyerAccept"> Accept</button>
+        </div> 
+        
+        <div id="inspector">
+            <p id="inspEventInfo" class="text-center"></p>
+            <button id="inspectedBtn" >Inspected</button>
+        </div>
+        
+        <div id="appraiser">
+            <p id="apprEventInfo" class="text-center"></p> 
+            <div id="inspectorBottom">
+                <button id="appraiseBtn" >Appraise</button>
+        </div>
+    </div>
+
+</body>
+</html>
