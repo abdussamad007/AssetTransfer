@@ -1,0 +1,21 @@
+{
+  "name": "assettransfer",
+  "version": "1.0.0",
+  "description": "Workflow Automation for Asset Transfer",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "mocha"
+  },
+  "author": "gayathridevi",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "fs": "0.0.1-security",
+    "lite-server": "^2.3.0",
+    "mocha": "^4.0.1",
+    "solc": "^0.4.24",
+    "truffle-hdwallet-provider": "^1.0.1",
+    "web3": "^1.0.0-beta.46"
+  }
+}
